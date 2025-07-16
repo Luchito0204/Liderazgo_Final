@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liderazgo y Gestión de Equipos</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    }
+
+    header {
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+      font-family: 'Orbitron', sans-serif;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    nav {
+      background-color: #121212;
+      padding: 12px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+    }
+
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 1000px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    }
+
+    h2 {
+      color: #0ff;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    h3 {
+      color: #00ffe7;
+      margin-top: 20px;
+    }
+
+    p {
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    .integrante {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
+    }
+
+    .integrante img {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      object-fit: cover;
+      margin-right: 20px;
+      border: 2px solid #0ff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0.03);
+    }
+
+    th,
+    td {
+      border: 1px solid #00c6ff;
+      padding: 12px;
+      color: #fff;
+    }
+
+    thead {
+      background-color: rgba(0, 198, 255, 0.3);
+    }
+
+    footer {
+      background-color: #000;
+      color: #0ff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    #NO\ TOCAR {
+      border: 2px dashed red;
+      background-color: rgba(255, 0, 0, 0.1);
+      color: #ff8080;
+    }
+
+    /* Agrega transiciones para toggles */
+    [id^="subtemas"] {
+      transition: all 0.5s ease;
+    }
+
+    h2[onclick] {
+      transition: color 0.3s ease;
+    }
+
+    h2[onclick]:hover {
+      color: #ffffff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+    <header>
+        <h1>Liderazgo y Gestión de Equipos </h1>
+    </header>
+
+    <section id="inicio">
+        <h2>Presentación del Curso</h2>
+        <p>El curso de <strong>Liderazgo y Gestión de Equipos</strong> nos enseña a identificar los elementos clave para liderar con efectividad, resolver conflictos, fomentar el trabajo colaborativo y desarrollar habilidades de comunicación dentro de una organización o proyecto.</p>
+        <p>Durante este curso, hemos aprendido técnicas esenciales para dirigir equipos, establecer objetivos comunes y desarrollar un entorno de confianza y compromiso.</p>
+    </section>
+
+    <section id="integrantes">
+        <h2>Integrantes</h2>
+        <p>Somos un equipo de trabajo de 4 integrantes. Cada uno responde:</p>
+        <h4>¿Cuál es la importancia del curso de Liderazgo y Gestión de Equipos?</h4>
+        <h4>¿En qué aplicarías lo aprendido?</h4>
+
+        <div class="integrante">
+            <img src= "https://i.pinimg.com/236x/fb/13/89/fb13894d0b886fa358aa8c6089d140dd.jpg" alt="Foto integrante 1">
+            <div>
+                <p><strong>Nombre:</strong> Donayre Carhuayo Luis Erasmo</p>
+                <p><strong>Código:</strong> U24208041</p>
+                <p>"https://drive.google.com/file/d/1KlZp3XrLK14sqyAlnvtfPlMGdNdV_Myk/view?usp=sharing"</p>
+            </div>
+        </div>
+
+        <div class="integrante">
+             <img src="https://i.pinimg.com/1200x/b5/0e/aa/b50eaa70ca1ab34bc9de8a10be06e6c1.jpg" alt="Foto integrante 2">
+            <div>
+                <p><strong>Nombre:</strong> Mayo Pecho Alejandra Valentina </p>
+                <p><strong>Código:</strong> U23206468</p>
+                <p> https://drive.google.com/drive/folders/12zKP5K9BCHLCaajf0nJ4anRC_N9srGrA </p>
+            </div>
+        </div>
+
+        <div class="integrante">
+            <img src="https://e7.pngegg.com/pngimages/405/151/png-clipart-uniqua-le-master-of-disguise-cartoon-wikia-others-purple-piracy.png" alt="Foto integrante 3">
+            <div>
+                <p><strong>Nombre:</strong> Gorddy Vinces Yaren Munaya Euribe</p>
+                <p><strong>Código:</strong> U23249183</p>
+                <p>"https://drive.google.com/file/d/1j8dtmyE4gU9AZkmnSTlkdXPm8NNZFqLr/view?usp=drivesdk"</p>
+            </div>
+        </div>
+
+        <div class="integrante">
+            <img src="https://e7.pngegg.com/pngimages/817/573/png-clipart-deer-wearing-red-and-black-hat-illustration-tyrone-dressed-as-henchman-at-the-movies-cartoons.png" alt="Foto integrante 4">
+            <div>
+                <p><strong>Nombre:</strong> Anyelo Efrain Palomino Champe</p>
+                <p><strong>Código:</strong> U23249209</p>
+                <p>"https://drive.google.com/file/d/1mdwA7cDETTcJbi0DnGCzfOc2x5SwAoHg/view?usp=sharing"</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="unidad1">
+        <h2 onclick="toggleSubtema('subtemas1')" style="cursor:pointer;">Unidad 1: El papel del equipo en las organizaciones modernas</h2>
+        <div id="subtemas1" style="display: none; margin-left: 20px;">
+            <h3>1.1 ¿Qué es ser un liderazgo autentico?</h3>
+            <p>Un líder auténtico implica ser genuino, es decir, personificar el verdadero yo y dejar a un lado el ego. Al ser auténtico, el líder recurre siempre a su sistema de valores, principios, moral y creencias para actuar. No oculta sus debilidades, sino que trabaja en mejorarlas; no exagera sus fortalezas, pero sabe obtener el mejor provecho de ellas.</p>
+
+
+            <h3>1.2 Diferencia entre jefe y lider</h3>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 10px;">
+                <thead style="background-color: #dfefff;">
+                    <tr>
+                        <th style="border: 1px solid #ccc; padding: 10px;">Personaje</th>
+                        <th style="border: 1px solid #ccc; padding: 10px;">Diferencias</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Lider</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">
+                            <p>- Genera entusiasmo </p>
+                            <p>- Busca soluciones a los problemas </p>
+                            <p>- Pide ayuda</p>- Pide ayuda
+                            <p>- Dice "Nosotros"</p>
+                            <p>- Comparte exitos</p>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid #ccc; padding: 10px;">Jefe</td>
+                        <td style="border: 1px solid #ccc; padding: 10px;">
+                            <p>- Inspira respeto</p>
+                            <p>- Busca responsable de los problemas</p>
+                            <p>- Da ordenes</p>
+                            <p>- Dice "yo"</p>
+                            <p>- Presume los exitos</p>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <h3>1.3 ¿Cómo ser un lider autentico?</h3>
+            <p> Ten una visión: La clave principal para ser un líder es tener un propósito en mente, peor no basta con un simple propósito, necesitas desarrollar una visión clara de lo que quieres alcanzar.</p>
+            <p>  Transmite tu pasión: Un verdadero líder se apasiona mucho por lograr esa visión, que inevitablemente contagia a todo su equipo.</p>
+            <p> Se autentico: Tienes que ser tu mismo y dejar que los demás te conozcan tal y como eres y no trates de aparentar ser algo que no eres.</p>
+            <p> Comprométete de corazón: Tu anhelo mas profundo viene de tu corazón, pero si no tienes compromiso, lo dejaras tirado en el camino. Siempre debes ser consistente con lo que dices y haces, mientras cumples tus promesas. </p>
+            <p> Gana su confianza: Demuestra que sabes realmente lo que haces y que realmente quieres ayudar a las personas.</p>
+            <p> Crece con humildad: Mantente en constate aprendizaje, no creas que eres el mejor o perderás todo tu liderazgo.</p>
+            <p> Motiva a tu equipo: El trabajo en equipo y la motivación constante son claves fundamentales en el éxito de cualquier proyecto.</p>
+            <p> Comunícate con precisión: En muchos casos los problemas se generan por una mala comunicación, por eso debes ser preciso y claro con tus palabras, siempre preguntando para así poder asegurar ide que fuiste comprendido.</p>
+            <p> Crea autoridad por admiración: Comparte tu historia para inspirar, para que ellos te digan “yo quiero lograr lo que tu has logrado, por lo tanto, voy a seguir tus pasos”</p>
+            <p> Crea nuevos líderes: Tu verdadero objetivo como un líder autentico es hacer de tus seguidores nuevos lideres.</p>
+            <p></p>
+            <h3>1.4 Tipo de Liderazgo Etico</h3>
+            <p>Es cuando los lideres empresariales demuestran una conducta adecuada, de acuerdo con sus principios y valores reconocidos, tanto dentro como fuera de la oficina </p>
+            <p></p>
+            <h3>1.5 Rasgos de los Lideres Eticos</h3>
+            <p> Da un gran ejemplo: Debes inspirar desde el hacer, no solo el decir, así todo el equipo seguirá tu ejemplo. Los lideres éticos tendrían altos estándares para su equipo, los mismos estándares que establecen para si mismos a diriarios </p>
+            <p> Respeta a todos por igual: Tener respeto por los demás de manera equitativa en el equipo y en la empresa. Se debe escuchar atentamente las opiniones y comentarios de todos los integrantes del equipo y/o empresa.</p>
+            <p> Comunicación abierta: Se debe tener una buena comunicación para evitar mal entendidos y problemas futuros y así construir confianza y respeto mutuo.</p>
+            <p> Mediación justa: Mostrar equidad, escuchar a ambos lados por igual y encontrar soluciones que satisfagan a ambas partes en esencial.</p>
+            <p> Se adapta al cambio: El liderazgo ético trata de comprender los cambios, escuchar las preocupaciones, pero también tomar decisiones que deben tomarse y ser respetadas por todo el equipo.</p>
+            <p> Tolerancia cero a las violaciones éticas: Los lideres éticos se responsabilizan diariamente ante cualquier problema, por lo tanto, se trata de hacer lo correcto en los momentos indicados, no cuando sea conveniente o cuando alguien este mirando.</p>
+            <p></p>
+            <h3>1.6 Valores de Lideres</h3>
+            <p>• Valentía: Enfrentan los retos y no se intimidan con nada.</p>
+            <p>• Pasión: Sienten amor por lo que hacen, motivan y contagian.</p>
+            <p>• Honestidad: Siempre es transparente y sus acciones sus acciones están basadas en sus palabras.</p>
+            <p>• Trabajo en equipo: Comparten conocimiento, creatividad, saben delegar, aprender mutuamente y orientan.</p>
+            <p>• Responsabilidad: Asumen riesgos y los resultados, aunque no sean positivos.</p>
+            <p>• Comunicación: Dejan en claro sus objetivos ante los demás y generan confianza.</p>
+        </div>
+    </section>
+
+    <section id="unidad2">
+        <h2 onclick="toggleSubtema('subtemas2')" style="cursor:pointer;">Unidad 2: Las Dinamicas de Grupo</h2>
+        <div id="subtemas2" style="display: none; margin-left: 20px;">
+            <h3>2.1 Tecnicas para optimizar el rendimiento de un equipo: </h3>
+            <h4>2.1.1 Concepto: </h4>
+            <p>Las habilidades técnicas se relacionan con la capacidad para utilizar el equipo, herramientas, materiales, datos y procesos requeridos por un proyecto o un proceso, además de que sirven para adquirir las habilidades y el conocimiento necesarios para realizar actividades nuevas. </p>
+            <h4>2.1.2 Caracteristicas: </h4>
+            <p>° Objetivo: Desarrolla competencias y habilidades blandas. </p>
+            <p>° Modalidad: Presencial, virtual o híbrida. </p>
+            <p>° Duración: Semanal, mensual o anual. </p>
+            <p>° Metodología: Práctica basada en proyectos. </p>
+            <p>° Público objetivo: Nuevos ingresos y empleados en desarrollo. </p>
+            <p>° Evaluación: Exámenes y encuestas de satisfacción. </p>
+            <h4>2.1.3 Metodologias: </h4>
+            <p>- Metodologia Agile: Enfoque iterativo que divide el trabajo en ciclos cortos (sprints) para entregar resultados rápidos y mejorados constantemente. </p>
+            <p>° Scrum: Marco de trabajo dentro de Agile que organiza el trabajo en roles definidos y ciclos de tiempo fijos llamados sprints.</p>
+            <p>° Kanban: Utiliza un tablero visual con tareas en diferentes estados para mejorar la transparencia y la gestión del flujo de trabajo. </p>
+            <p>- Metodogia Design Thinking: </p>
+            <p>° Empatizar: Comprender al usuario. </p>
+            <p>° Definir: Identificar los problemas claves. </p>
+            <p>° Idear: Generar múltiples soluciones. </p>
+            <p>° Prototipar: Crear versiones preliminares. </p>
+            <p>° Testear: Evaluar y refinar el prototipo. </p>
+            <h3>2.2 Motivación en el entorno empresarial: </h3>
+            <h4>2.2.1 Concepto: </h4>
+            <p>La motivación es el conjunto de factores internos y externos que impulsan a una persona a realizar una tarea con entusiasmo y compromiso. </p>
+            <h4>2.2.2 Caracteristicas: </h4>
+            <p>° Clima organizacional: Un ambiente de trabajo positivo fomenta la satisfacción.</p>
+            <p>° Liderazgo: Un líder efectivo impulsa la motivación. </p>
+            <p>° Gamificación: La implementación de elementos de juego en el trabajo aumenta la participación. </p>
+            <p>° Trabajo remoto: La flexibilidad laboral puede mejorar la productividad. </p>
+            <p>° Desarrollo profesional: Oportunidades de aprendizaje y crecimiento aumentan la lealtad. </p>
+            <h4>2.2.3 Teorias: </h4>
+            <p>- Pirámide de Maslow: Clasifica las necesidades en cinco niveles (fisiológicas, seguridad, sociales, estima y autorrealización). </p>
+            <p>- Teoría de los Dos Factores de Herzberg: Los clasifica en dos factores: higienizantes (salario, condiciones laborales) y motivacionales (reconocimiento, desarrollo). </p>
+            <h4>2.2.4 Tipos de Motivación: </h4>
+            <p>- Intrínseca: Surge del interés personal y la satisfacción en la realización de tareas, donde los empleados suelen ser más creativos y persistentes. </p>
+            <p>- Extrínseca: Se basa en recompensas externas, como incentivos salariales o reconocimiento. Su efectividad depende de la adecuación entre la recompensa. </p>
+            <h3>2.3 Las Dinamicas de Grupo: </h3>
+            <h4>2.3.1 Concepto: </h4>
+            <p>Las técnicas de dinámica de grupos son metodologías que facilitan la cohesión y eficiencia en equipos de trabajo. Se utilizan para desarrollar habilidades blandas, mejorar la comunicación y fortalecer el trabajo colaborativo. </p>
+            <p>Los objetivos deben ser claros antes de implementar cualquier dinámica grupal, y deben estar alineados con las necesidades del equipo y los resultados esperados. Se deben definir roles y responsabilidades para optimizar la participación y garantizar una ejecución efectiva. </p>
+            <h4>2.3.2 Caracteristicas: </h4>
+            <p>° Integración: Favorecen el conocimiento entre los miembros del equipo. </p>
+            <p>° Comunicación: Mejoran la expresión de ideas. </p>
+            <p>° Creatividad: Como la lluvia de ideas y el pensamiento lateral. </p>
+            <p>° Liderazgo: Desarrollan la capacidad de toma de decisiones. </p>
+            <p>° Evaluación grupal: Permiten medir la efectividad del trabajo colaborativo. </p>
+            <p>° Negociación: Ayudan a resolver diferencias y llegar a acuerdos en la toma de decisiones. </p>
+            <p>° Gamificación: Uso de juegos para mejorar la dinámica del grupo y fortalecer la motivación. </p>
+            <h3>2.4 Tipos de Dinamicas de Grupo: </h3>
+            <h4>2.4.1 Basadas en el tamaño del grupo: </h4>
+            <p>- Pequeño (2-10): Permiten una mayor participación individual y discusión detallada. </p>
+            <p>- Mediano (11-30): Equilibran la comunicación y la diversidad de ideas. </p>
+            <p>- Grande (+30): Se requiere una estructuración más organizada para mantener la atención y la participación equitativa. </p>
+            <h4>2.4.2 Test de roles: </h4>
+            <p>El test de Belbin es una herramienta que permite identificar los roles naturales que cada persona desempeña dentro de un equipo. Meredith Belbin identificó nueve roles que pueden agruparse en tres categorías:</p>
+            <p>- Roles de Acción: </p>
+            <p>° Impulsor: Es enérgico, busca resultados. </p>
+            <p>° Implementador: Es organizado, convierte ideas en acciones. </p>
+            <p>° Finalizador: Es detallista, revisa errores. </p>
+            <p>- Roles sociales: </p>
+            <p>° Coordinador: Delega tareas, fomenta la participación. </p>
+            <p>° Cohesionador: Es diplomático, reduce conflictos. </p>
+            <p>° Investigador: Explora ideas. </p>
+            <p>- Roles Reflexivos: </p>
+            <p>° Cerebro: Es creativo, resuelve problemas complejos. </p>
+            <p>° Monitor evaluador: Es 4nalítico, toma decisiones lógicas. </p>
+            <p>° Especialista: Es experto en un área técnica específica. </p>
+          </div>
+    </section>
+
+    <section id="unidad3">
+        <h2 onclick="toggleSubtema('subtemas3')" style="cursor:pointer;">Unidad 3: La Comunicación en el Ambito Empresarial</h2>
+        <div id="subtemas3" style="display: none; margin-left: 20px;">
+            <h3>3.1 Tecnicas de dinamica de grupo para la resolución de conflictos: </h3>
+            <h4>3.1.1 Concepto: </h4>
+            <p>Permite identificar problemas estructurales, mejorar la comunicación interna y fomentar el aprendizaje organizacional, siempre y cuando se vea desde una perspectiva positiva. Donde los líderes desempeñan un rol fundamental en la prevención y resolución de conflictos. Deben actuar como facilitadores, promoviendo una comunicación abierta y garantizando que las diferencias se aborden con respeto y profesionalismo. </p>
+            <h4>3.1.2 Caracteristicas: </h4>
+            <p>* Innovación y creatividad: El conflicto estimula la exploración de nuevas ideas y soluciones disruptivas. </p>
+            <p>* Mejora de procesos: Identificar desacuerdos permite detectar fallos. </p>
+            <p>* Desarrollo de habilidades interpersonales: Favorece la comunicación efectiva. </p>
+            <p>* Toma de decisiones informada: Minimiza riesgos. </p>
+            <h4>3.1.3 Etapas: </h4>
+            <p>* Identificación del conflicto </p>
+            <p>* Evaluación del problema </p>
+            <p>* Exploración de soluciones </p>
+            <p>* Implementación de la solución </p>
+            <p>* Seguimiento </p>
+            <h4>3.1.4 Estrategias: </h4>
+            <p>* Mediación: Un tercero ayuda a las partes a encontrar un acuerdo.</p>
+            <p>* Colaboración: Se buscan soluciones que beneficien a ambas partes.</p>
+            <p>* Compromiso: Se ceden puntos para llegar a un acuerdo equilibrado.</p>
+            <p>* Evitación: Se pospone el conflicto para evitar confrontaciones directas.</p>
+            <p>* Acomodación: Una parte cede completamente para mantener la armonía.</p>
+            <h4>3.1.5 Metodos:</h4>
+            <p>* Negociación: Un proceso en el que las partes en conflicto buscan acuerdos mediante el diálogo.</p>
+            <p>* Mediación: Un tercero imparcial ayuda a encontrar una solución aceptable para ambas partes.</p>
+            <p>* Arbitraje: Un tercero toma una decisión vinculante para resolver el conflicto.</p>
+            <p>* Consenso: Se busca una solución común mediante la cooperación.</p>
+            <p>* Resolución Colaborativa: Se identifican soluciones mediante la participación activa.</p>
+            <h4> Herramientas para la solucion de conflictos: </h4>
+            <p>- Scrum y reuniones diarias: Facilitan la comunicación.</p>
+            <p>- Kanban: Mejora la visualización de tareas.</p>
+            <p>- Feedback 360°: Permite una buena retroalimentación.</p>
+            <p>- Jira/Trello: Permite gestionar tareas y responsabilidades.</p>
+            <h3>3.2 Habilidades Sociales: </h3>
+            <h4>3.2.1 Concepto: </h4>
+            <p>Son el conjunto de competencias interpersonales que permiten la interacción efectiva con otros. Estas incluyen la escucha activa, la empatía, la comunicación asertiva y la capacidad de negociación, aspectos clave para liderar reuniones productivas.</p>
+            <h4>3.2.2 Caracteristicas: </h4>
+            <p>- Escucha activa: Permite comprender mejor las necesidades del equipo.</p>
+            <p>- Empatía: Facilita la conexión entre los participantes.</p>
+            <p>- Comunicación clara: Evita malentendidos.</p>
+            <p>- Gestión del tiempo: Optimiza el desarrollo de la reunión.</p>
+            <p>- Resolución de conflictos: Permite manejar desacuerdos sin afectar la dinámica del equipo. </p>
+            <h4>3.2.3 La Asertividad: </h4>
+            <p>Es la capacidad de expresar ideas, opiniones y necesidades de manera clara y respetuosa, sin caer en la agresividad o la pasividad.</p>
+            <p>* Expresión clara</p>
+            <p>* Control emocional</p>
+            <p>* Lenguaje corporal positivo</p>
+            <p>* Uso adecuado del tono de voz</p>
+            <p>* Capacidad de negociación</p>
+            <h4> 3.2.4 Habilidades Sociales: </h4>
+            <p>- La empatía: Se divide en dos dimensiones: la empatía cognitiva, permite comprender el punto de vista del otro, y la empatía emocional, posibilita sentir las emociones ajenas. Estas dimensiones son fundamentales para crear un ambiente de respeto y cohesión en las reuniones. </p>
+            <p>- La escucha activa: Va más allá de oír: involucra atención plena, interpretación correcta y respuestas constructivas, permiten detectar necesidades, aclarar malentendidos.</p>
+            <h3> 3.3 La Comunicación en el ámbito empresarial: </h3>
+            <h4> 3.3.1 Concepto: </h4>
+            <p>Es la herramienta que conecta a todos los niveles internos y a los stakeholders externos para consolidar relaciones. Este enfoque permite gestionar crisis, reforzar el liderazgo y proyectar una imagen corporativa coherente.</p>
+            <h4> 3.3.2 Puntos claves de la comunicación: </h4>
+            <p>- Plan de comunicación estratégica: Definición de objetivos </p>
+            <p>- Gestión de crisis: Protocolos para comunicar de forma oportuna. </p>
+            <p>- Storytelling corporativo: Técnicas de comunicación visual.</p>
+            <h4> 3.3.3 Metodos: </h4>
+            <p>* Comunicación sincrónica: Videoconferencias para la interacción en tiempo real.</p>
+            <p>* Comunicación asincrónica: Correos electrónicos que permiten la reflexión y la documentación.</p>
+            <p>* Medios digitales: Integración de redes sociales, blogs o plataformas colaborativas.</p>
+            <h3>3.4 El concepto del grupo: </h3>
+            <h4> 3.4.1 Concepto: </h4>
+            <p>Es un conjunto de individuos que interactúan y colaboran entre sí con un objetivo en común. Los grupos pueden estar conformados por desarrolladores, analistas, diseñadores y gestores de proyectos, quienes trabajan en conjunto para construir soluciones tecnológicas, donde cada integrante asume roles específicos que complementan las habilidades del equipo.</p>
+            <h4>3.4.2 Esquema del modelo Tuckman: </h4>
+            <p> Formación ---> Tormenta ----> Normalización -----> Rendimiento ------> Disolución</p>
+            <h4>3.4.3 Caracteristicas: </h4>
+            <p>* Interdependencia: Los miembros del grupo dependen unos de otros para alcanzar el objetivo común. </p>
+            <p>* Cohesión: Nivel de unión y compromiso dentro del equipo. </p>
+            <p>* Estructura: Organización de roles y normas dentro del grupo. </p>
+            <p>* Comunicación: Intercambio efectivo de información y retroalimentación. </p>
+            <p>* Liderazgo: Una figura que guía y motiva al equipo para alcanzar los objetivos.</p>
+            <h4> 3.4.4 Roles dentro del grupo: </h4>
+            <p>* Líder: Coordina, motiva y dirige al equipo.</p>
+            <p>* Innovador: Propone soluciones creativas. </p>
+            <p>* Planificador: Organiza y distribuye tareas.</p>
+            <p>* Ejecutor: Implementa y realiza las actividades. </p>
+            <h4>3.4.5 Tipos de Grupos: </h4>
+            <p>- Grupos formales: Se crean con un propósito específico, con roles definidos y objetivos claros, como los equipos de desarrollo de software en una empresa. Su estructura es jerárquica y su permanencia depende del cumplimiento de sus objetivos. </p>
+            <p>- Grupos informales: Surgen de manera espontánea, basados en intereses comunes o afinidades personales, como foros de discusión entre programadores. Aunque no tienen una estructura rígida. </p>
+            <p>- Grupos de pertenencia: Son aquellos en los que una persona es miembro activo, como una comunidad de desarrolladores en una empresa.</p>
+            <p>- Grupos de referencia: Son aquellos con los que una persona se compara o aspira a pertenecer, como un equipo de expertos en inteligencia artificial.</p>
+            <p>- Grupos primarios: Son aquellos con relaciones personales cercanas y prolongadas, como amigos que estudian juntos. </p>
+            <p>- Grupos Secundarios: Tienen interacciones más formales y basadas en objetivos, como los equipos de trabajo en una empresa.</p>
+        </div>
+    </section>
+
+    <section id="NO TOCAR">
+    <h2 onclick="toggleSubtema('Subtema4')" style="color: red;">NO TOCAR! PELIGRO </h2>
+        <div id="Subtema4" style="display: none; margin-left: 20px;">
+            <h3> OPCION TROLL JAJAJAJAJAJAJAJAJAJAJA 🤣 </h3>
+            <img src="https://i.pinimg.com/236x/69/a2/99/69a2994bf4e91a83a0942b9468782d29.jpg" alt="Foto Troll">
+        </div>
+    </section>
+
+    <footer>
+        2025 Liderazgo y Gestión de Equipos
+    </footer>
+
+    <!-- JavaScript para desplegar subtemas -->
+    <script>
+        function toggleSubtema(id) {
+            const div = document.getElementById(id);
+            if (div) {
+                div.style.display = div.style.display === "none" ? "block" : "none";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
